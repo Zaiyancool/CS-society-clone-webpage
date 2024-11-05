@@ -1,0 +1,37 @@
+.sidebar{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    top: 55px;
+    background-color: rgb(19, 30, 35);
+    width: 400px;
+    z-index: 101;
+    padding-top: 50px;
+}
+
+.sidebar-title {
+    margin-left: 60px;
+    font-size: 48px;
+    font-family: Skranji, Arial;
+    color: rgb(239, 246, 139);
+    margin-bottom: 25px;
+}
+
+.others{
+    font-size: 18px;
+    font-family: Proza Libre, Arial;
+    font-weight: 700;
+    cursor: pointer;
+    color: white;
+    margin-left: 60px;
+    margin-bottom: 20px;
+    text-wrap: nowrap;
+    transition: background-color 0.15s;
+    border-radius: 5px;
+}
+
+.others:hover{
+    background-color: rgb(71, 100, 71);
+    border-radius: 5px;
+}
+

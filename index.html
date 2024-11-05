@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="test.css">
+    <title>Job Showcase</title>
+</head>
+<body>
+    <header>
+        <h1>Job Showcase</h1>
+        <nav>
+            <button onclick="showAll()">Show All</button>
+            <button onclick="showOnly('Engineering')">Show Engineering Jobs</button>
+            <button onclick="showOnly('Medical')">Show Medical Jobs</button>
+            <button onclick="showOnly('Art')">Show Art Jobs</button>
+        </nav>
+    </header>
+    
+    <main id="job-list">
+        <div class="job" data-type="Engineering">
+            <h2>Software Engineer</h2>
+            <p>John Doe</p>
+        </div>
+        <div class="job" data-type="Engineering">
+            <h2>Data Scientist</h2>
+            <p>Jane Smith</p>
+        </div>
+        <div class="job" data-type="Medical">
+            <h2>Doctor</h2>
+            <p>Dr. Emily Johnson</p>
+        </div>
+        <div class="job" data-type="Medical">
+            <h2>Nurse</h2>
+            <p>Sarah Connor</p>
+        </div>
+        <div class="job" data-type="Art">
+            <h2>Graphic Designer</h2>
+            <p>Michael Brown</p>
+        </div>
+        <div class="job" data-type="Art">
+            <h2>Photographer</h2>
+            <p>Lisa White</p>
+        </div>
+    </main>
+
+    <script>
+        function showAll() {
+            const jobs = document.querySelectorAll('.job');
+            jobs.forEach(job => {
+                job.style.display = 'block';
+            });
+        }
+
+        function showOnly(type) {
+            const jobs = document.querySelectorAll('.job');
+            jobs.forEach(job => {
+                job.style.display = job.dataset.type === type ? 'block' : 'none';
+            });
+        }
+    </script>
+</body>
+</html>

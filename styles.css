@@ -1,0 +1,106 @@
+body{
+    padding-top: 100px;
+    padding-left: 400px;
+    padding-bottom: 300px;
+    font-family: Roboto, Arial;
+    background-color: rgb(19, 30, 35); ;
+    color: white;
+}
+
+
+.picture-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 16px;
+    row-gap: 40px;
+}
+
+@media (max-width: 1000px) {
+    .picture-grid{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 750px) {
+    .picture-grid{
+        grid-template-columns: 1fr;
+    }
+}
+
+
+.job{
+    display: grid;
+    grid-template-rows: auto;
+}
+
+.person{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    transition: transform 0.2s ease-in-out;
+}
+
+.person:hover{
+    transform: scale(1.1); 
+}
+
+.person-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+
+}
+
+.person-name{
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.department{
+    font-weight: 500;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.rank{
+    margin-top: 0;
+}
+
+.yt-logo{
+    width: 100%; 
+    height: auto;
+    display: inline;
+    width: 30px;
+}
+
+.yt-logo:hover{
+    cursor: pointer;
+}
+
+.yt-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+}
+
+.yt-link a svg{
+    fill: white;
+    transition: transform 0.2s ease-in-out;
+}
+
+.yt-link a svg:hover{
+    transform: rotate(-15deg);
+    fill: red;
+}
+
+a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+

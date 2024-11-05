@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<!-- TEST  -->
+<html>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="sidebar.css">
+    <link rel="stylesheet" href="topbar.css">
+    <head>
+        <title>CS Website Clone</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Skranji:wght@400;700&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Proza+Libre:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Roboto:wght@400;500;700&family=Skranji:wght@400;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="Header">
+
+        <nav class="navbar">
+            <div class="logo">
+                <img src="/pictures/VHack_Logo.png" alt="Vhacklogo" height="35px" width="35px">
+                V HACK
+            </div>
+            <ul class="nav-links">
+                <li><a href="https://vhackusm.com/#" target="_blank">Home</a></li>
+                <li><a href="https://vhackusm.com/tentative" target="_blank">Tentative</a></li>
+                <li><a href="https://vhackusm.com/speakers" target="_blank">Speakers</a></li>
+                <li><a href="https://vhackusm.com/judges" target="_blank">Judges</a></li>
+                <li><a href="https://vhackusm.com/mentors" target="_blank">Mentors</a></li>
+                <li><a href="https://vhackusm.com/partners" target="_blank">Partners</a></li>
+                <li><a href="https://vhackusm.com/faq" target="_blank">FAQs</a></li>
+                <li><a href="https://vhackusm.com/rules" target="_blank">Rules</a></li>
+                <li><a href="https://vhackusm.com/about-us" target="_blank">Organising Team</a></li>
+            </ul>
+            <button class="login-btn"><a href="https://vhackusm.com/login" target="_blank">Log In</a></button>
+            <div class="menu-toggle">&#9776;</div>
+        </nav>
+
+        </div>
+    
+        <script>
+            const menuToggle = document.querySelector('.menu-toggle');
+            const navLinks = document.querySelector('.nav-links');
+    
+            menuToggle.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+            });
+        </script>
+
+
+
+
+
+
+        <div class="sidebar">
+            <div class="sidebar-title">
+                Meet the team.
+            </div>
+            <div class="others">
+                <p onclick="showAll()">All</p>
+            </div>
+            <div class="others">
+                <p onclick="showOnly('Top Committe')">Top Committe</p>
+            </div>
+            <div class="others">
+                <p onclick="showOnly('Programme')">Programme</p>
+            </div>
+            <div class="others">
+                <p onclick="showOnly('Public Relations and Documentation')">Public Relations and Documentation</p>
+            </div>
+            <div class="others">
+                <p onclick="showOnly('Publicity and Marketing')">Publicity and Marketing</p>
+            </div>
+            <div class="others">
+                <p onclick="showOnly('Sponsorship')">Sponsorship</p>
+            </div>
+            <div class="others">
+                <p onclick="showOnly('Logistics')">Logistics</p>
+            </div>
+            <div class="others">
+                <p onclick="showOnly('Technical')">Technical</p>
+            </div>
+            <div class="others">
+                <p onclick="showOnly('Design & Multimedia')">Design & Multimedia</p>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+        <div class="picture-grid">
+
+            <div class="job" data-type="Top Committe">
+                <div>
+                    <img class="person" src="pictures/rummenigge.webp">
+                </div>
+    
+                <div class="person-info">
+                    <p class="person-name">Rummenigge</p>
+                    <p class="department">Top Committe</p>
+                    <p class="rank">Project Director</p>
+                    <div class="yt-link">
+                        <a href="https://www.youtube.com/watch?v=egLUB1JXUwI&pp=ygUKcnVtbWVuaWdnZQ%3D%3D" target="_blank">
+                            <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>YouTube</title><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="job" data-type="Top Committe">
+                <div>
+                    <img class="person" src="pictures/torres.webp">
+                </div>
+    
+                <div class="person-info">
+                    <p class="person-name">Fernando Torres</p>
+                    <p class="department">Top Committe</p>
+                    <p class="rank">Vice Project Director</p>
+                    <div class="yt-link">
+                        <a href="https://www.youtube.com/watch?v=h0N67Mh7htE&pp=ygUPZmVybmFuZG8gdG9ycmVz" target="_blank">
+                            <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>YouTube</title><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="job" data-type="Top Committe">
+                <div>
+                    <img class="person" src="pictures/bale.webp">
+                </div>
+    
+                <div class="person-info">
+                    <p class="person-name">Gareth Bale</p>
+                    <p class="department">Top Committe</p>
+                    <p class="rank">Secretary</p>
+                    <div class="yt-link">
+                        <a href="https://youtu.be/L_segph_wk0" target="_blank">
+                            <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>YouTube</title><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="job" data-type="Top Committe">
+                <div>
+                    <img class="person" src="pictures/law.webp">
+                </div>
+    
+                <div class="person-info">
+                    <p class="person-name">Denis Law</p>
+                    <p class="department">Top Committe</p>
+                    <p class="rank">Treasurer</p>
+                    <div class="yt-link">
+                        <a href="https://www.youtube.com/watch?v=BTBMmd7mqc4&pp=ygUJZGVuaXMgbGF3" target="_blank">
+                            <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>YouTube</title><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="job" data-type="Programme">
+                <div>
+                    <img class="person" src="pictures/maldini.webp">
+                </div>
+    
+                <div class="person-info">
+                    <p class="person-name">Paolo Maldini</p>
+                    <p class="department">Programme</p>
+                    <p class="rank">Head Executive</p>
+                    <div class="yt-link">
+                        <a href="https://www.youtube.com/watch?v=9LnEGGMPnfg&pp=ygUQbWFsZGluaSBnYW1lcGxheQ%3D%3D" target="_blank">
+                            <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>YouTube</title><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="job" data-type="Programme">
+                <div>
+                    <img class="person" src="pictures/puyol.webp">
+                </div>
+    
+                <div class="person-info">
+                    <p class="person-name">Carles Puyol</p>
+                    <p class="department">Programme</p>
+                    <p class="rank">Vice Executive</p>
+                    <div class="yt-link">
+                        <a href="https://www.youtube.com/watch?v=JWh-Dx2FgFY&pp=ygUFcHV5b2w%3D" target="_blank">
+                            <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>YouTube</title><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="job" data-type="Public Relations and Documentation">
+                <div>
+                    <img class="person" src="pictures/eto.webp">
+                </div>
+    
+                <div class="person-info">
+                    <p class="person-name">Samuel Eto'o</p>
+                    <p class="department">Public Relations and Documentation</p>
+                    <p class="rank">Head Executive</p>
+                    <div class="yt-link">
+                        <a href="https://www.youtube.com/watch?v=19T9QkuH_h4&pp=ygUMU2FtdWVsIEV0bydv" target="_blank">
+                            <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>YouTube</title><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="job" data-type="Public Relations and Documentation">
+                <div>
+                    <img class="person" src="pictures/gerrard.webp">
+                </div>
+    
+                <div class="person-info">
+                    <p class="person-name">Steven Gerrard</p>
+                    <p class="department">Public Relations and Documentation</p>
+                    <p class="rank">Vice Executive</p>
+                    <div class="yt-link">
+                        <a href="https://www.youtube.com/watch?v=K-u0gOjKS4g&pp=ygUHZ2VycmFyZA%3D%3D" target="_blank">
+                            <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>YouTube</title><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="job" data-type="Publicity and Marketing">
+                <div>
+                    <img class="person" src="pictures/ribery.webp">
+                </div>
+    
+                <div class="person-info">
+                    <p class="person-name">Frank Ribery</p>
+                    <p class="department">Publicity and Marketing</p>
+                    <p class="rank">Head Executive</p>
+                    <div class="yt-link">
+                        <a href="https://www.youtube.com/watch?v=yinLYssJAGc&pp=ygUMZnJhbmsgcmliZXJ5" target="_blank">
+                            <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>YouTube</title><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="job" data-type="Publicity and Marketing">
+                <div>
+                    <img class="person" src="pictures/guti.webp">
+                </div>
+    
+                <div class="person-info">
+                    <p class="person-name">Guti</p>
+                    <p class="department">Publicity and Marketing</p>
+                    <p class="rank">Vice Executive</p>
+                    <div class="yt-link">
+                        <a href="https://www.youtube.com/watch?v=KgI7lOfamBE&pp=ygUEZ3V0aQ%3D%3D" target="_blank">
+                            <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>YouTube</title><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="job" data-type="Sponsorship">
+                <div>
+                    <img class="person" src="pictures/drogba.webp">
+                </div>
+    
+                <div class="person-info">
+                    <p class="person-name">Didier Drogba</p>
+                    <p class="department">Sponsorship</p>
+                    <p class="rank">Head Executive</p>
+                    <div class="yt-link">
+                        <a href="https://www.youtube.com/watch?v=SbTYkT1YnyE&pp=ygUGZHJvZ2Jh" target="_blank">
+                            <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>YouTube</title><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="job" data-type="Sponsorship">
+                <div>
+                    <img class="person" src="pictures/beckham.webp">
+                </div>
+    
+                <div class="person-info">
+                    <p class="person-name">David Beckham</p>
+                    <p class="department">Sponsorship</p>
+                    <p class="rank">Vice Executive</p>
+                    <div class="yt-link">
+                        <a href="https://www.youtube.com/watch?v=oTpTVqJX8ho&pp=ygUNZGF2aWQgYmVja2hhbQ%3D%3D" target="_blank">
+                            <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>YouTube</title><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="job" data-type="Logistics">
+                <div>
+                    <img class="person" src="pictures/gullit.webp">
+                </div>
+    
+                <div class="person-info">
+                    <p class="person-name">Rudi Gullit</p>
+                    <p class="department">Logistics</p>
+                    <p class="rank">Head Executive</p>
+                    <div class="yt-link">
+                        <a href="https://www.youtube.com/watch?v=2jK1ONH5u7I&pp=ygUGZ3VsbGl0" target="_blank">
+                            <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>YouTube</title><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="job" data-type="Logistics">
+                <div>
+                    <img class="person" src="pictures/maradona.webp">
+                </div>
+    
+                <div class="person-info">
+                    <p class="person-name">Diego Maradona</p>
+                    <p class="department">Logistics</p>
+                    <p class="rank">Vice Executive</p>
+                    <div class="yt-link">
+                        <a href="https://www.youtube.com/watch?v=J5-9vSfxrdQ&pp=ygUOZGllZ28gbWFyYWRvbmE%3D" target="_blank">
+                            <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>YouTube</title><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="job" data-type="Technical">
+                <div>
+                    <img class="person" src="pictures/xavi.webp">
+                </div>
+    
+                <div class="person-info">
+                    <p class="person-name">Xavi</p>
+                    <p class="department">Technical</p>
+                    <p class="rank">Head Executive</p>
+                    <div class="yt-link">
+                        <a href="https://www.youtube.com/watch?v=cfHhhyWAUZE&pp=ygUEeGF2aQ%3D%3D" target="_blank">
+                            <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>YouTube</title><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="job" data-type="Technical">
+                <div>
+                    <img class="person" src="pictures/iniesta.webp">
+                </div>
+    
+                <div class="person-info">
+                    <p class="person-name">Andres Iniesta</p>
+                    <p class="department">Technical</p>
+                    <p class="rank">Vice Executive</p>
+                    <div class="yt-link">
+                        <a href="https://www.youtube.com/watch?v=CyfUc4-DZCY&pp=ygUHaW5pZXN0YQ%3D%3D" target="_blank">
+                            <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>YouTube</title><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="job" data-type="Design & Multimedia">
+                <div>
+                    <img class="person" src="pictures/scholes.webp">
+                </div>
+    
+                <div class="person-info">
+                    <p class="person-name">Paul Scholes</p>
+                    <p class="department">Design & Multimedia</p>
+                    <p class="rank">Head Executive</p>
+                    <div class="yt-link">
+                        <a href="https://www.youtube.com/watch?v=ETHmhvLBcQI&pp=ygUHc2Nob2xlcw%3D%3D" target="_blank">
+                            <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>YouTube</title><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="job" data-type="Design & Multimedia">
+                <div>
+                    <img class="person" src="pictures/totti.webp">
+                </div>
+    
+                <div class="person-info">
+                    <p class="person-name">Francesco Totti</p>
+                    <p class="department">Design & Multimedia</p>
+                    <p class="rank">Vice Executive</p>
+                    <div class="yt-link">
+                        <a href="https://www.youtube.com/watch?v=eZUjZRJQLF8&pp=ygUFdG90dGk%3D" target="_blank">
+                            <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>YouTube</title><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+    
+    
+  
+    
+        </div>
+
+        <script>
+            function showAll() {
+                const jobs = document.querySelectorAll('.job');
+                jobs.forEach(job => {
+                    job.style.display = 'block';
+                });
+            }
+    
+            function showOnly(type) {
+                const jobs = document.querySelectorAll('.job');
+                jobs.forEach(job => {
+                    job.style.display = job.dataset.type === type ? 'block' : 'none';
+                });
+            }
+        </script>
+ 
+    </body>
+</html>
